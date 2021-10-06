@@ -1,0 +1,9 @@
+{"users":[{"id":1,"full_name":"Asadbek","username":"asadbek","password":"password"},{"id":2,"full_name":"Asadbek","username":"asadbekz","password":"password"}],"messages":[
+    {
+        "id": 1,
+        "from": 1,
+        "to": 2,
+        "text": "Assalomu alaykum"
+    }
+]}
+

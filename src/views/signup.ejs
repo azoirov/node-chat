@@ -1,0 +1,59 @@
+<%- include("partials/header") %>
+<% var error, title %>
+<section
+    class="
+        d-flex
+        flex-column
+        vh-100
+        w-100
+        justify-content-center
+        align-items-center
+    "
+>
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+        <% if(error) { %>
+            <div class="w-50 alert alert-danger">
+                <strong><%= error%></strong>
+            </div>
+        <% } %>    
+        <form action="/signup" method="POST" autocomplete="off" class="w-50">
+            <h2 class="text-center">Sign Up</h2>
+            <hr>
+            <div class="form-floating mb-3">
+                <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                    name="full_name"
+                    autocomplete="off"
+                />
+                <label for="floatingInput">Full Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input
+                    type="text"
+                    class="form-control"
+                    id="floatingPassword"
+                    name="username"
+                    placeholder="Password"
+                    autocomplete="off"
+                />
+                <label for="floatingPassword">Username</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input
+                    type="password"
+                    class="form-control"
+                    id="floatingPassword"
+                    placeholder="Password"
+                    name="password"
+                    autocomplete="off"
+                />
+                <label for="floatingPassword">Password</label>
+            </div>
+            <button class="btn-lg btn btn-primary w-100">Sign Up</button>
+        </form>
+    </div>
+</section>
+<%- include("partials/footer") %>

@@ -1,0 +1,28 @@
+{
+    "name": "chat",
+    "version": "1.0.0",
+    "description": "��#\u0000 \u0000n\u0000o\u0000d\u0000e\u0000-\u0000c\u0000h\u0000a\u0000t\u0000\r\u0000 \u0000",
+    "main": "index.js",
+    "scripts": {
+        "start": "node ./src/server.js",
+        "dev": "nodemon ./src/server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/azoirov/node-chat.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/azoirov/node-chat/issues"
+    },
+    "homepage": "https://github.com/azoirov/node-chat#readme",
+    "dependencies": {
+        "cookie-parser": "^1.4.5",
+        "dotenv": "^10.0.0",
+        "ejs": "^3.1.6",
+        "express": "^4.17.1",
+        "jsonwebtoken": "^8.5.1"
+    }
+}
